@@ -273,12 +273,13 @@ z-index:0;
 <section class="section reveal"><div class="section-head"><div><div class="kicker">Como funciona</div><h2 class="title">Parceria simples, profissional e mensurável.</h2></div></div><div class="process"><div class="step"><b>1</b><h3>Contato</h3><p class="text">Entendemos a marca, objetivo e público.</p></div><div class="step"><b>2</b><h3>Planejamento</h3><p class="text">Definimos formato, mensagem e melhor abordagem.</p></div><div class="step"><b>3</b><h3>Gravação</h3><p class="text">Inserção natural no conteúdo ou episódio especial.</p></div><div class="step"><b>4</b><h3>Distribuição</h3><p class="text">YouTube, Instagram, LinkedIn e cortes.</p></div><div class="step"><b>5</b><h3>Resultados</h3><p class="text">Relatório com métricas e aprendizados.</p></div></div></section>
 <section class="section reveal"><div class="section-head"><div><div class="kicker">Prova de crescimento</div><h2 class="title">Métricas reais para mostrar potencial de retorno.</h2></div></div><div class="proof"><div class="proof-card" style="--r:-2deg"><img src="assets/img14.jpg"></div><div class="proof-card" style="--r:2deg"><img src="assets/img08.jpg"></div><div class="proof-card" style="--r:-1deg"><img src="assets/img11.jpg"></div></div></section>
 
-<section class="plans-section" id="planos">
-<div class="container">
-<div class="section-title">
-<span>PLANOS DE PATROCÍNIO</span>
-<h2>Escolha a parceria ideal para sua marca</h2>
-<p>O ZCast Varejo oferece diferentes formatos de parceria para conectar sua empresa a um público altamente qualificado do varejo.</p>
+<section class="section reveal plans-section" id="planos">
+<div class="section-head">
+<div>
+<div class="kicker">Planos de patrocínio</div>
+<h2 class="title">Escolha a parceria ideal para sua marca.</h2>
+<p class="section-subtitle">O ZCast Varejo oferece diferentes formatos de parceria para conectar sua empresa a um público altamente qualificado do varejo.</p>
+</div>
 </div>
 <div class="plan-grid">
 <div class="plan featured"><h3><span class="plan-icon plan-icon-master" aria-hidden="true">
@@ -306,10 +307,13 @@ z-index:0;
 </span><span>Cota Apoiador</span></h3><small>Até 5 empresas</small><ul>
 <li>Logo na tela de parceiros</li><li>Link na descrição</li><li>Agradecimento no encerramento</li><li>Post coletivo de parceiros</li><li>Stories do ZCast</li><li>Selo Empresa Parceira</li></ul></div>
 </div>
-<div class="audience-box">
-<h3>Diferencial do ZCast Varejo</h3>
-<p>Ao patrocinar o ZCast Varejo, sua empresa se conecta diretamente com proprietários, empresários, diretores, executivos, gestores, líderes, RH, compradores, fornecedores, empresas de tecnologia e profissionais que impulsionam o varejo brasileiro.</p>
-<p>Mais do que um podcast, o ZCast Varejo é um ecossistema de conteúdo, relacionamento e desenvolvimento profissional que fortalece marcas, conecta pessoas e impulsiona negócios.</p>
+
+<div class="section-head audience-standard">
+<div>
+<div class="kicker">Diferencial ZCast</div>
+<h2 class="title">Muito mais que um podcast. Um ecossistema que fortalece o varejo brasileiro.</h2>
+<p class="section-subtitle">Ao patrocinar o ZCast Varejo, sua empresa se conecta diretamente com proprietários, empresários, diretores, executivos, gestores, líderes, RH, compradores, fornecedores, empresas de tecnologia e profissionais que impulsionam o varejo brasileiro.</p>
+<p class="section-subtitle">Mais do que um podcast, o ZCast Varejo é um ecossistema de conteúdo, relacionamento e desenvolvimento profissional que fortalece marcas, conecta pessoas e impulsiona negócios.</p>
 </div>
 </div>
 </section>
@@ -748,6 +752,15 @@ document.querySelectorAll('.photo').forEach((p,i)=>{p.style.transitionDelay=(i*7
     }
     .whatsapp-float svg{width:30px;height:30px;}
 }
+
+/* Ajuste 21: padronização dos títulos de Planos e Diferencial */
+.plans-section{padding:88px 0 !important;}
+.plans-section .section-head{margin-bottom:34px;}
+.plans-section .plan-grid{margin-top:0;}
+.audience-standard{margin-top:74px;margin-bottom:0 !important;}
+.audience-standard .section-subtitle{max-width:980px;}
+.audience-standard .section-subtitle + .section-subtitle{margin-top:14px;}
+@media(max-width:900px){.audience-standard{margin-top:54px;}}
 </style>
 <script>
 const heroVideo=document.getElementById('heroVideo');
